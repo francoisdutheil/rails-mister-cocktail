@@ -1,11 +1,16 @@
 
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://unsplash.com/photos/lwoTuByIuC4');">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');">
   <div class="container">
-    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-    <p>Change your life and learn to code at one of our campuses around the world.</p>
-    <a class="btn btn-flat" href="#">Apply now</a>
+    <h1>BORIS HOUSE OF COCKTAILS</h1>
+
   </div>
 </div>
 
 
+<h1>My list of cocktails</h1>
+<% @cocktails.each do |cocktail| %>
+  <h2><%= link_to cocktail.name, cocktail %></h2>
+<% end %>
+
+<%= link_to "Add a cocktail", new_cocktail_path %>

@@ -12,4 +12,9 @@ url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 cocktails_serialized = open(url).read
 cocktails = JSON.parse(cocktails_serialized)
 
-ap cocktails
+Cocktail.create(name: "mojito" )
+Cocktail.create(name: "Baileys" )
+Cocktail.create(name: "Gin Tonic" )
+Cocktail.create(name: "Feu du tonnerre" )
+
+
